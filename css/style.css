@@ -1,0 +1,440 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover {
+    color: orange;
+}
+hr {
+    width: 90%;
+    position: absolute;
+    left: 5%;
+}
+body {
+    max-height: 100vh;
+}
+
+/* Start header */
+.container header {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 45%;
+}
+/* Start Top */
+.container header .top {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 5%;
+}
+.container header .top ul {
+    display: flex;
+}
+.container header .top ul li {
+    margin-left: 25px;
+    font-size: 14px;
+}
+.container header .top a {
+    color: #FFF;
+}
+.container header .top a:hover {
+    color: orange;
+}
+.container header .top a:focus {
+    color: orange;
+}
+.container header .top hr {
+    margin: -8px;
+    color: #fff;
+}
+.container header .top details summary {
+    color: #FFF;
+}
+.container header .top details .options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 99;
+}
+.container header .top details .options button {
+    background-color: #ddddddc6;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: black;
+    margin: 3px 0;
+    font-size: 16px;
+    transition: 0.2s;
+}
+.container header .top details .options button:hover {
+    box-shadow: 0 3px 6px 0px rgb(161, 161, 161);
+}
+/* End Top */
+/* Start Center */
+.container header .center {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 5%;
+}
+.container header .center .logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFF;
+}
+.container header .center .logo h1 span {
+    color: orange;
+}
+.container header .center .search input {
+    position: absolute;
+    left: 30%;
+    width: 550px;
+    padding: 6px 12px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    transition: 0.3s;
+    transition: 0.4s;
+}
+.container header .center .search input:hover {
+    background-color: rgb(226, 226, 226);
+}
+.container header .center .search input:focus {
+    background-color: #222;
+    color: #FFF;
+    transform: scale(1.03);
+    transition: 0.4s;
+    border: 1px solid #00ddff;
+    outline: 1px solid #0061e0;
+}
+.container header .center .social i {
+    color: #FFF;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.container header .center .social .heart::after {
+    content: "+99";
+    position: absolute;
+    right: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 35%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(221, 172, 56);
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+.container header .center .social .shoping::after {
+    content: "5";
+    position: absolute;
+    right: 4.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 35%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(221, 172, 56);
+    color: black;
+    font-size: 12px;
+}
+/* End Center */
+/* Start Bottom */
+.container header .bottom {
+    margin: 50px 0;
+}
+.container header .bottom ul {
+    display: flex;
+    margin: 30px 4%;
+}
+.container header .bottom ul .active::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: red green yellow blue;
+}
+.container header .bottom ul li {
+    font-size: 14px;
+    color: #FFF;
+    margin-left: 30px;
+}
+.container header .bottom ul li a:focus {
+    color: orange;
+}
+/* End Bottom */
+/* Start Nav */
+.container nav .main-image {
+    position: absolute;
+    top: 45%;
+    left: 7.5%;
+    background-color: #888;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 4px;
+    width: 85%;
+    padding: 10px 0;
+    margin: 20px 0;
+    box-shadow: 6px 6px 4px -5px #000;
+
+}
+.container nav .main-image .text {
+    position: relative;
+    top: 70px;
+    left: 40px;
+}
+.container nav .main-image .text span {
+    color: orange;
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 50px;
+    top: -10px;
+}
+.container nav .main-image .text h1 {
+    font-size: 28px;
+    position: relative;
+    left: 50px;
+    font-weight: bold;
+    color: #FFF;
+    line-height: 1.5;
+    top: -10px;
+}
+.container nav .main-image .text p {
+    position: relative;
+    left: 50px;
+    color: #f5f5f5;
+    font-size: 14px;
+}
+.container nav .main-image .text button {
+    background: rgb(221, 172, 56);
+    padding: 8px;
+    border-radius: 3px;
+    position: relative;
+    left: 50px;
+    top: 20px;
+    transition: 0.3s;
+}
+.container nav .main-image .text button:hover {
+    transition: 0.3s;
+    border: 1px solid rgb(221, 172, 56);
+    color: rgb(221, 172, 56);
+    background-color: transparent;
+}
+
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  display: none;
+}
+.carousel-item img {
+  position: relative;
+  left: 250px;
+}
+
+/* Show the first item initially */
+.carousel-item:first-child {
+  display: block;
+}
+
+
+
+
+
+
+/* Three Images */
+.container nav .three-images {
+    position: absolute;
+    top: 120%;
+    display: flex;
+    justify-content: space-around;
+}
+.container nav .three-images .one,
+.container nav .three-images .two,
+.container nav .three-images .three
+{
+    margin-left: 25px;
+    background-color: #888;
+    width: 300px;
+    border-radius: 2px;
+    box-shadow: 6px 6px 4px -4px #000;
+}
+.container nav .three-images .one span,
+.container nav .three-images .two span,
+.container nav .three-images .three span
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+    font-size: 16px;
+    margin-left: 45px;
+    top: 20px;
+    z-index: 999;
+}
+.container nav .three-images .one h2,
+.container nav .three-images .two h2,
+.container nav .three-images .three h2
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: orange;
+    margin-left: 45px;
+    top: 60px;
+    font-size: 18px;
+    z-index: 99;
+    font-weight: bold;
+}
+.container nav .three-images .one button,
+.container nav .three-images .two button,
+.container nav .three-images .three button
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: orange;
+    padding: 6px;
+    border-radius: 2px;
+    margin-left: 45px;
+    top: 120px;
+    z-index: 99;
+    color: black;
+    text-transform: uppercase;
+}
+.container nav .three-images .one button:hover,
+.container nav .three-images .two button:hover,
+.container nav .three-images .three button:hover
+{
+    transition: 0.3s;
+    border: 1px solid orange;
+    color: orange;
+    background-color: transparent;
+}
+.container nav .three-images .one img,
+.container nav .three-images .two img,
+.container nav .three-images .three img
+{
+    position: relative;
+    right: -80px;
+}
+/* Three Images */
+/* SECTION-3 */
+.container nav .sections .section-3 {
+    position: absolute;
+    top: 170%;
+    left: 5%;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.container nav .sections .section-4 {
+    position: absolute;
+    top: 265%;
+    left: 5%;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.container nav hr {
+    position: absolute;
+    top: 8%;
+    left: 0%;
+    width: 950px;
+}
+/* SECTION-3 */
+/* Start Sections */
+.container nav .sections .images {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+.container nav .sections .images .image {
+    background-color: #e3e3e3;
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    box-shadow: 6px 6px 6px -6px #333;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.container nav .sections .images .image:hover {
+    background-color: #bababac3;
+}
+.container nav .sections .images .image::before {
+    content: "NEW";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: black;
+    background-color: orangered;
+    border-radius: 50%;
+    top: 70px;
+    margin-left: 80px;
+}
+.container nav .sections .images h3 {
+    margin: 8px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+.container nav .sections .images p {
+    font-size: 12px;
+    font-weight: normal;
+    color: gray;
+    margin: 5px 0;
+}
+.container nav .sections .images .sales {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: -40px;
+}
+.container nav .sections .images .sales h4 {
+    color: rgb(72, 185, 11);
+}
+/* End Sections */
+/* Start More-Products */
+.container nav .more-products > h3 {
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    bottom: -250%;
+    margin-top: 20px;
+    left: 45%;
+    color: gray;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.container nav .more-products > h3:hover {
+    color: black;
+}
+/* End More-Products */
+/* End Nav */
+/* End Header */
+
